@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+:root {
+--background: #ffffff;
+--foreground: #0b1020;
+/* Chart tokens (light) */
+--chart-grid: #cbd5e1; /* slate-300 */
+--chart-line: #0b1020; /* near-ink */
+--chart-pos: #16a34a; /* green-600 */
+--chart-neg: #dc2626; /* red-600 */
+--chart-track:#e2e8f0; /* slate-200 */
+--chart-label:#475569; /* slate-600 */
+--chart-ink: #0b1020; /* text over colored rects */
+}
+
+
+@theme inline {
+--color-background: var(--background);
+--color-foreground: var(--foreground);
+--font-sans: var(--font-geist-sans);
+--font-mono: var(--font-geist-mono);
+}
+
+
+@media (prefers-color-scheme: dark) {
+:root {
+--background: #0a0f1a; /* deep slate */
+--foreground: #e6edf7;
+/* Chart tokens (dark) */
+--chart-grid: #475569; /* slate-600 */
+--chart-line: #e5e7eb; /* slate-200 */
+--chart-pos: #22c55e; /* green-500 */
+--chart-neg: #ef4444; /* red-500 */
+--chart-track:#1f2937; /* slate-800 */
+--chart-label:#94a3b8; /* slate-400 */
+--chart-ink: #0b1020; /* still dark for contrast against bright fills */
+}
+}
+
+
+body {
+background: var(--background);
+color: var(--foreground);
+font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+/* Safe default for map containers */
+.map-wrap { height: 600px; width: 100%; position: relative; z-index: 0; }
+
+
+/* Leaflet stacking fixes (kept) */
+.leaflet-container { z-index: 0 !important; }
+.leaflet-pane, .leaflet-top, .leaflet-bottom { z-index: 100 !important; }
+
+
+/* Optional layers */
+.filters-layer { position: fixed; top: 1rem; left: 1rem; z-index: 3000; pointer-events: auto; }
+.dropdown-portal { position: relative; z-index: 4000; }
