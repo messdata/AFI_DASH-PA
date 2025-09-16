@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+functions/node_modules/
+
+# Next.js build artifacts
+.next/
+out/
+
+# Environment files
+.env*
+!.env.example
+
+# Vercel local settings
+.vercel/
+
+# Logs and temp files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.DS_Store
