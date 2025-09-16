@@ -1,0 +1,6 @@
+# Use the same patterns as .gitignore to avoid uploading local build artifacts
+node_modules/
+functions/
+dataconnect/
+dataconnect-generated/
+ngrok.txt
