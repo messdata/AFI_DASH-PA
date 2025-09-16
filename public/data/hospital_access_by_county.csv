@@ -1,0 +1,33 @@
+county,label,hospitals_total,acute_hospitals_count,ed_sites_count,hospitals_per_100k_65,pop65_2040_BAU,hospital_groups,sample_hospital,data_source
+ Clare, Clare,4,0,0,,,Hospital,Saint Dympna's Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Cork, Cork,16,1,0,,,Hospital,Cavan General Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Donegal, Donegal,10,1,0,,,Hospital,Cahercalla,HSE Hospitals CSV (LA derived from address fields)
+ Galway, Galway,1,7,0,,,Hospital,Bandon Community Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Kerry, Kerry,6,1,0,,,Hospital,Buncrana,HSE Hospitals CSV (LA derived from address fields)
+ Kildare, Kildare,1,15,0,,,Hospital,Baggot Street,HSE Hospitals CSV (LA derived from address fields)
+ Laois, Laois,2,5,0,,,Hospital,Bon Secours Hospital - Galway,HSE Hospitals CSV (LA derived from address fields)
+ Leitrim, Leitrim,3,2,0,,,Hospital,Bon Secours Hospital - Kerry,HSE Hospitals CSV (LA derived from address fields)
+ Limerick, Limerick,2,1,0,,,Hospital,Athy,HSE Hospitals CSV (LA derived from address fields)
+ Louth, Louth,3,2,0,,,Hospital,Aut Even Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Mayo, Mayo,4,1,0,,,Hospital,Abbeyleix,HSE Hospitals CSV (LA derived from address fields)
+ Meath, Meath,1,0,0,,,Hospital,Manorhamilton,HSE Hospitals CSV (LA derived from address fields)
+ Monaghan, Monaghan,1,3,0,,,Hospital,Barrington's Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Offaly, Offaly,2,1,0,,,Hospital,Drogheda,HSE Hospitals CSV (LA derived from address fields)
+ Tipperary, Tipperary,5,1,0,,,Hospital,Belmullet Community Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Waterford, Waterford,1,1,0,,,Hospital,Our Lady's Hospital Navan,HSE Hospitals CSV (LA derived from address fields)
+ Westmeath, Westmeath,2,1,0,,,Hospital,Monaghan Hospital,HSE Hospitals CSV (LA derived from address fields)
+ Wexford, Wexford,1,1,0,,,Hospital,Birr,HSE Hospitals CSV (LA derived from address fields)
+ Wicklow, Wicklow,2,1,0,,,Hospital,Roscommon University Hospital,HSE Hospitals CSV (LA derived from address fields)
+Carlow,Carlow,1,2,0,,,Hospital,"Kingsbridge Private Hospital, ",HSE Hospitals CSV (LA derived from address fields)
+Cork,Cork,11,2,0,,,Hospital,Nenagh Hospital,HSE Hospitals CSV (LA derived from address fields)
+Donegal,Donegal,1,2,0,,,Hospital,St. Joseph's Dungarvan ,HSE Hospitals CSV (LA derived from address fields)
+Dublin,Dublin,30,2,0,,,Hospital,Midland Regional Hospital Mullingar,HSE Hospitals CSV (LA derived from address fields)
+Dublin 9,Dublin 9,1,1,0,,,Hospital,Gorey District Hospital,HSE Hospitals CSV (LA derived from address fields)
+Galway,Galway,4,0,0,,,Hospital,Baltinglass District Hospital,HSE Hospitals CSV (LA derived from address fields)
+Kildare,Kildare,1,0,0,,,Hospital,Baltinglass District Hospital,
+Kilkenny,Kilkenny,3,0,0,,,Hospital,Baltinglass District Hospital,
+Limerick,Limerick,5,0,0,,,Hospital,Baltinglass District Hospital,
+Monaghan,Monaghan,1,0,0,,,Hospital,Baltinglass District Hospital,
+Sligo,Sligo,4,0,0,,,Hospital,Baltinglass District Hospital,
+Waterford,Waterford,2,0,0,,,Hospital,Baltinglass District Hospital,
+Wexford,Wexford,1,0,0,,,Hospital,Baltinglass District Hospital,
