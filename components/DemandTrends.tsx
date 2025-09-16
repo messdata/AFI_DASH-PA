@@ -22,9 +22,20 @@ type Props = {
   years: (string | number)[];
   series: Series[];
   valueSuffix?: string; // default "%"
+  labels?: string[];    // NEW: allow overriding labels
 };
 
-export default function DemandTrends({ years, series, valueSuffix = "%" }: Props) {
+export default function DemandTrends({
+  years,
+  series,
+  valueSuffix = "%",
+  labels,
+}: {
+  years: (string | number)[];
+  series: Series[];
+  valueSuffix?: string;
+  labels?: string[];
+}) {
   // --- helpers: stable vivid color per series label ---
   const hueFor = (label: string) => {
     let h = 0;
@@ -35,7 +46,8 @@ export default function DemandTrends({ years, series, valueSuffix = "%" }: Props
   const fillColor = (label: string) => `hsla(${hueFor(label)}, 85%, 60%, 0.12)`;
 
   // --- coerce inputs to safe arrays ---
-  const labels = Array.isArray(years) ? years.map(String) : [];
+  const defaultLabels = Array.isArray(years) ? years.map(String) : [];
+  const usedLabels = labels ?? defaultLabels;
   const safeSeries = Array.isArray(series) ? series : [];
 
   // --- build datasets ---
@@ -47,7 +59,7 @@ export default function DemandTrends({ years, series, valueSuffix = "%" }: Props
       const bg = fillColor(s.label);
       return {
         label: s.label,
-        data: labels.map(y => {
+        data: usedLabels.map(y => {
           const v = byYear.get(String(y));
           return Number.isFinite(v as number) ? (v as number) : null;
         }),
@@ -64,9 +76,9 @@ export default function DemandTrends({ years, series, valueSuffix = "%" }: Props
         fill: true, // soft area fill to make lines look “color-full”
       };
     });
-  }, [safeSeries, labels]);
+  }, [safeSeries, usedLabels]);
 
-  const data = { labels, datasets };
+  const data = { labels: usedLabels, datasets };
 
   const options = {
     responsive: true,
